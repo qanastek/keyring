@@ -10,7 +10,6 @@ Made by Labrak Yanis.
 ## Informations
 
 Currently work with:
-
 	- [x] Instagram
 	- [ ] Facebook
 	- [ ] Twitter
@@ -25,7 +24,6 @@ Currently work with:
 	- [ ] TikTok
 
 Todo:
-
 	- [ ] Work this every single website above
 	- [ ] Finish the both UI
 	- [ ] Make it more secure by adding more input condition
@@ -36,7 +34,6 @@ Todo:
 	- [ ] Draw the Architecture
 
 Todo V2:
-
 	- [ ] Add multi downloading in one time
 	- [ ] Add image downloader
 		- [ ] Choose ouput extension
