@@ -23,19 +23,24 @@ yarn test
 
 ## Informations
 
-Currently work with:
-- [x] Instagram
-- [ ] Facebook
-- [ ] Twitter
-- [ ] Youtube
-- [ ] VK
-- [ ] Vine
-- [ ] Vimeo
-- [ ] Tumblr
-- [ ] TED
-- [ ] Dailymotion
-- [ ] QQ - http://v.qq.com/
-- [ ] TikTok
+Currently work with :
+
+| Website      | 🎬 Videos  | 🌁 Images |
+| ---------    |:----------:| ----------:|
+| Instagram    | ✓          |            |
+| Facebook     |            |            |
+| Twitter      |            |            |
+| Youtube      |            |            |
+| VK           |            |            |
+| Vine         |            |            |
+| Vimeo        |            |            |
+| Tumblr       |            |            |
+| TED          |            |            |
+| Dailymotion  |            |            |
+| QQ           |            |            |
+| TikTok       |            |            |
+
+http://v.qq.com/
 
 Todo:
 - [ ] Work this every single website above
@@ -52,6 +57,8 @@ Todo V2:
 - [ ] Add image downloader
 	- [ ] Choose ouput extension
 
-## Some GitHub example:
+## Similar GitHub projects:
 
 	* https://github.com/soimort/you-get
+	* https://github.com/iawia002/annie
+	* https://github.com/rylio/ytdl
