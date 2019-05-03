@@ -1,11 +1,8 @@
 # keyring
 A mutliwebsite video downloader.
 
-## Getting Started
-
-### Download a video
-
-Step 1 - Go to
+![GitHub last commit](https://img.shields.io/github/last-commit/qanastek/keyring.svg?style=flat-square)
+![GitHub](https://img.shields.io/github/license/qanastek/keyring.svg?style=flat-square)
 
 ## Authors
 Made by Labrak Yanis.
