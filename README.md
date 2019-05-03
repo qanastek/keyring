@@ -9,7 +9,7 @@ Made by Labrak Yanis.
 
 ## Informations
 
-- [] Currently work with:
+- [ ] Currently work with:
 	- [x] Instagram
 	- [ ] Facebook
 	- [ ] Twitter
@@ -23,7 +23,7 @@ Made by Labrak Yanis.
 	- [ ] QQ - http://v.qq.com/
 	- [ ] TikTok
 
-- [] Todo:
+- [ ] Todo:
 	- [ ] Work this every single website above
 	- [ ] Finish the both UI
 	- [ ] Make it more secure by adding more input condition
@@ -33,7 +33,7 @@ Made by Labrak Yanis.
 		- [ ] UI testing (maybe ?)
 	- [ ] Draw the Architecture
 
-- [] Todo V2:
+- [ ] Todo V2:
 	- [ ] Add multi downloading in one time
 	- [ ] Add image downloader
 		- [ ] Choose ouput extension
