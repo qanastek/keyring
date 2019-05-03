@@ -7,6 +7,8 @@ A mutliwebsite video downloader.
 ## Authors
 Made by Labrak Yanis.
 
+## Informations
+
 Currently work with:
   - [x] Instagram
   - [ ] Facebook
@@ -36,5 +38,5 @@ Todo V2:
 	- [ ] Add image downloader
 		- [ ] Choose ouput extension
 
-Some GitHub example:
+## Some GitHub example:
 	* https://github.com/soimort/you-get
