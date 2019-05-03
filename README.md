@@ -5,7 +5,21 @@ A mutliwebsite video downloader.
 ![GitHub](https://img.shields.io/github/license/qanastek/keyring.svg?style=flat-square)
 
 ## Authors
+
 Made by Labrak Yanis.
+
+## Getting Started
+
+bash ```
+git clone https://github.com/qanastek/keyring.git
+nodemon server.js
+```
+
+## Run unit tests
+
+bash ```
+yarn test
+```
 
 ## Informations
 
