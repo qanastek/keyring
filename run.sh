@@ -1,3 +1,6 @@
-nodemon server.js
+# nodemon server.js
+# yarn test
 
-yarn test
+git add * -f &
+git commit -m "update readme" &
+git push

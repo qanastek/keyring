@@ -39,7 +39,7 @@ Currently work with:
 
 Todo:
 - [ ] Work this every single website above
-- [ ] Finish the both UI
+- [ ] Finish both UI
 - [ ] Make it more secure by adding more input condition
 - [ ] Test
 	- [ ] Fuzzing
