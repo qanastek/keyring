@@ -15,13 +15,17 @@ const $ = require('cheerio');
 
 const app = express();
 
-// Settings
+// View engine
 nunjucks.configure('views', {
   autoescape: true,
   express: app
 });
 
+// View engine
 app.set('view engine', 'njk');
+
+// Default static folder
+app.use(express.static('public'));
 
 // Function importation part
 const Instagram = require('./checkUrlInstagram');
@@ -44,6 +48,8 @@ app.get('/video', function (req, res)
 
 	const url = req.query.url;
 
+	if (url === undefined || url === "") { throw "You need to enter an URL"; }
+
 	const DOMAIN = url.split('/')[2];
 
 	if (DOMAIN === "www.instagram.com")
@@ -57,7 +63,6 @@ app.get('/video', function (req, res)
 		})
 		.then(function(html)
 		{
-
 			let uri = $("meta[property='og:video']", html)[0].attribs.content;
 			
 		    res.render('pages/video', {
@@ -65,12 +70,10 @@ app.get('/video', function (req, res)
 		        link: "?url=" + uri,
 		        cmd: "curl -o MyConverter" + Date.now() + ".mp4 " + uri + " --silent"
 		    });
-
 		})
 		.catch(function(err)
 		{
-			console.log(err);
-			throw "A error happenning !";
+			res.render('pages/index');
 		});
 	}
 	else

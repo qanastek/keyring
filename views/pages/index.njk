@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<style type="text/css">
+		::-webkit-scrollbar { 
+		    display: none; 
+		}
+	</style>
 </head>
 <body>
-<header>
-</header>
 <main>
 
-	<h1>Input</h1>
+	<div class="row backgroundGradient" style="width: 100vw; height: 100vh; margin: 0%;">
+		<div class="col-md-12" style="padding-top: 50vh; padding-left: 25vw;">
 
-	<form action="video" method="GET">
-		<input type="text" name="url" placeholder="url...">
-		<button type="submit">Send</button>
-	</form>
+			<form action="video" method="GET">
+
+				<div class="input-group mb-3" style="width: 50vw; height: 3em;">
+
+				<input type="text" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px;" class="form-control" placeholder="Link of the video..." aria-describedby="basic-addon2" name="url" required>
+
+				<div class="input-group-append">
+					<button class="btn SendButton" type="submit" style="font-size: 1em;">Convert</button>
+				</div>
+
+				</div>
+
+			</form>
+
+		</div>
+	</div>
 
 </main>
-
-<footer>
-</footer>
-
 </body>
 </html>
