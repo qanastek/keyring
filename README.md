@@ -10,14 +10,14 @@ Made by Labrak Yanis.
 
 ## Getting Started
 
-bash ```
+```bash
 git clone https://github.com/qanastek/keyring.git
 nodemon server.js
 ```
 
 ## Run unit tests
 
-bash ```
+```bash
 yarn test
 ```
 
