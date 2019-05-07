@@ -45,7 +45,7 @@ http://v.qq.com/
 Todo:
 - [ ] Front end verification (jquery validate)
 	- [x] Everything is fill up
-	- [ ] Check domain ect ...
+	- [x] Check domain ect ...
 	- [ ] Check if not an image
 - [ ] Work this every single website above
 - [ ] Finish both UI
@@ -53,6 +53,7 @@ Todo:
 - [ ] Test
 	- [ ] Fuzzing
 	- [ ] Unit testing
+		- [ ] SuperTest
 	- [ ] UI testing (maybe ?)
 - [ ] Draw the Architecture
 
