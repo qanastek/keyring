@@ -18,7 +18,7 @@ nodemon server.js
 ## Run unit tests
 
 ```bash
-yarn test
+npm test
 ```
 
 ## Informations
@@ -46,7 +46,7 @@ Todo:
 - [ ] Front end verification (jquery validate)
 	- [x] Everything is fill up
 	- [x] Check domain ect ...
-	- [ ] Check if not an image
+	- [ ] Check if its an image or not
 - [ ] Work this every single website above
 - [ ] Finish both UI
 - [ ] Make it more secure by adding more input condition
@@ -64,6 +64,6 @@ Todo V2:
 
 ## Similar GitHub projects:
 
-	* https://github.com/soimort/you-get
-	* https://github.com/iawia002/annie
-	* https://github.com/rylio/ytdl
+* https://github.com/soimort/you-get
+* https://github.com/iawia002/annie
+* https://github.com/rylio/ytdl
