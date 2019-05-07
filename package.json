@@ -4,20 +4,25 @@
   "description": "A mutliwebsite video downloader.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "SET NODE_ENV=dev && node ./bin/www",
+    "devstart": "SET NODE_ENV=dev && nodemon ./bin/www",
+    "test": "mocha"
   },
   "author": "Labrak Yanis",
   "license": "MIT",
   "dependencies": {
+    "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.3",
-    "copy-text-to-clipboard": "^2.1.0",
     "express": "^4.16.4",
+    "mocha": "^6.1.4",
     "npm": "^6.9.0",
     "nunjucks": "^3.2.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
-    "jest": "^24.7.1"
+    "chai": "*",
+    "mocha": "*"
   }
 }

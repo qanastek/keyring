@@ -43,6 +43,10 @@ Currently work with :
 http://v.qq.com/
 
 Todo:
+- [ ] Front end verification (jquery validate)
+	- [x] Everything is fill up
+	- [ ] Check domain ect ...
+	- [ ] Check if not an image
 - [ ] Work this every single website above
 - [ ] Finish both UI
 - [ ] Make it more secure by adding more input condition

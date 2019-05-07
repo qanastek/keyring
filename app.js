@@ -28,19 +28,8 @@ app.set('view engine', 'njk');
 app.use(express.static('public'));
 
 // Function importation part
-const Instagram = require('./checkUrlInstagram');
-
-app.get('/download', function (req, res)
-{
-	// Change filename
-	res.header('Content-Disposition', 'attachment; filename=' + "MyConverter" + Date.now() + ".mp4");
-
-	// Download the video
-	https.get(req.query.url, function(file) {
-	  file.pipe(res);
-	});
-
-});
+const Instagram = require('./Instagram');
+const Twitter = require('./Twitter');
 
 app.get('/video', function (req, res)
 {
@@ -50,11 +39,11 @@ app.get('/video', function (req, res)
 
 	if (url === undefined || url === "") { throw "You need to enter an URL"; }
 
-	const DOMAIN = url.split('/')[2];
+	let DOMAIN = url.split('/')[2];
 
-	if (DOMAIN === "www.instagram.com")
+	if (DOMAIN === "www.instagram.com" || DOMAIN === "instagram.com")
 	{
-		Instagram.checkUrlInstagram(url);
+		if (Instagram.checkUrlInstagram(url) === false) { res.render('pages/index'); }
 
 		rp(
 		{
@@ -64,12 +53,13 @@ app.get('/video', function (req, res)
 		.then(function(html)
 		{
 			let uri = $("meta[property='og:video']", html)[0].attribs.content;
-			
-		    res.render('pages/video', {
-		        url: uri,
-		        link: "?url=" + uri,
-		        cmd: "curl -o MyConverter" + Date.now() + ".mp4 " + uri + " --silent"
-		    });
+
+			res.header('Content-Disposition', 'attachment; filename=' + "MyConverter" + Date.now() + ".mp4");
+
+			// Download the video
+			https.get(uri, function(file) {
+			  file.pipe(res);
+			});
 		})
 		.catch(function(err)
 		{
