@@ -42,7 +42,11 @@ Currently work with :
 
 http://v.qq.com/
 
-Todo:
+## Pictures
+
+![The GUI](demo_pictures/main.png)
+
+## Todo:
 - [ ] Front end verification (jquery validate)
 	- [x] Everything is fill up
 	- [x] Check domain ect ...
